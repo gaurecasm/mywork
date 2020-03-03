@@ -1,0 +1,12 @@
+{
+    "python.pythonPath": "workenv\\Scripts\\python.exe",
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.banditEnabled": true,
+    "python.linting.banditPath": "pylint",
+    "python.linting.banditArgs": [
+        "pylint"
+    ],
+    "files.autoSave": "onWindowChange",
+    "python.linting.flake8Enabled": false
+}

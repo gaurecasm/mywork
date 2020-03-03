@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		{% for obj in books %}
+		<div class="col-4">
+	  		<div class="card" style="width: 18rem;">
+					{% if obj.image %}
+						<!-- <img class="card-img-top" src="{{ obj.image.url }}"  class="img-fluid"> -->
+					{% endif %}
+  				<div class="card-body">
+    			<h5 class="card-title" >{{obj.title }}</h5>
+    			<p class="card-text">{{ obj.description|truncatewords:10 }}</p>
+  				</div>
+			</div>
+		</div>
+		{% endfor %}
+    </div>
+    
+
+    <h2> hello this is h1</h2>
+</div>
+{% endblock %}
+
