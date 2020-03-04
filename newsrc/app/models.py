@@ -15,4 +15,13 @@ class Book(models.Model):
 
     def  __str__(self):
         return self.title
-        
+
+class User(models.Model):
+
+    username = models.CharField(blank=False, unique=True, max_length=20)
+    password = models.CharField(blank=False, max_length=10)
+    # phoneNo = models.IntegerField(blank=False, unique=True,)
+       
+    def  __str__(self):
+
+        return self.username
